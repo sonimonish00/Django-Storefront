@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Welcome to Django Webapp</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello World</h1>
+     </header>
+    
+     <footer>
+        {% if name %}   
+        &copy; {{name}} | Made with ❤ in India. 
+        {% else %}
+        <h1>Footer Name Not Available.</h1>
+        {% endif %}
+    </footer>
+</body>
+</html>
