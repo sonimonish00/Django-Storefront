@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: waitress-serve --listen=*:8000 storefront.wsgi:application
