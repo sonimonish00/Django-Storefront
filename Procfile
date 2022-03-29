@@ -1,1 +1,1 @@
-web: PYTHONPATH=$(pwd)'/src' waitress-serve --port=$PORT storefront.wsgi:application
+web: python manage.py runserver 0.0.0.0:5000
