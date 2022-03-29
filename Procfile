@@ -1,3 +1,1 @@
-web: gunicorn storefront.wsgi:application --log-file - --log-level debug
-python manage.py collectstatic --noinput
-manage.py migrate
+web: PYTHONPATH=$(pwd)'/src' waitress-serve --port=$PORT storefront.wsgi:application
