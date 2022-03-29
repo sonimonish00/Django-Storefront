@@ -1,1 +1,1 @@
-web: PYTHONPATH=$(pwd)'/src' waitress-serve --port=$PORT storefront.wsgi:application
+web: PYTHONPATH=$(pwd)'/src' waitress-serve --port=$PORT DJANGO-STOREFRONT.storefront.wsgi:application
