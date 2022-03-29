@@ -1,1 +1,1 @@
-web: python manage.py runserver 
+web: gunicorn storefront.wsgi:application --log-file - --log-level debug
