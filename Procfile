@@ -1,1 +1,1 @@
-web: gunicorn storefront.__pycache__.wsgi 
+web:python manage.py runserver
